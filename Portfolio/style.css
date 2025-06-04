@@ -1,0 +1,160 @@
+
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: black;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #fff;
+}
+
+header {
+  background: ;
+  padding: 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  /* animation: neon 1.5s ease-in-out infinite alternate;*/
+}
+
+.desc h1 {
+  display: flex;
+  padding-bottom: 1rem;
+  justify-content: center;
+   font-size: 2.3rem;
+  background: linear-gradient(95deg, #1e2a78, #ff2553,#ffb608);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.desc img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem 2.1rem;
+  height: 80%;
+  width: 80%;
+  margin-top: 1rem;
+  border-radius: 35px 50px 35px;
+  background: #111;
+  box-shadow:  0 0 5px 1px #1e2a78;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  justify-content: space-evenly;
+  margin-top: 1.2rem;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #fff;
+  text-shadow:
+    0 0 5px #ff2553,
+    0 0 10px #ff2553,
+    0 0 20px #ff2553,
+    0 0 100px #ff2553;
+}
+
+section {
+  padding: 60px 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.projetos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.projeto-card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.projeto-card:hover {
+  transform: translateY(-5px);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input, textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  background: #333;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: #ff6347;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #333;
+  color: #fff;
+  margin-top: 40px;
+}
+
+@keyframes neon {
+            from {
+                text-shadow:
+                    0 0 5px #0ff,
+                    0 0 10px #0ff,
+                    0 0 20px #0ff,
+                    0 0 40px #0ff;
+                color: #0ff;
+            }
+            to {
+                text-shadow:
+                    0 0 10px #f0f,
+                    0 0 20px #f0f,
+                    0 0 40px #f0f,
+                    0 0 80px #f0f;
+                color: #f0f;}
+}
+  
+/* Dark Mode */
+@media (prefers-color-scheme: dark) {
+  body {
+    background: #121212;
+    color: #eee;
+  }
+  header, footer {
+    background: #1e1e1e;
+  }
+  .projeto-card {
+    background: #1e1e1e;
+    color: #eee;
+  }
+}
