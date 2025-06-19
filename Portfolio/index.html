@@ -1,64 +1,90 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfólio </title>
-  <link rel="stylesheet" href="style.css">
-  <script defer src="js/script.js"></script>
+  <meta charset="UTF-8" />
+  <meta name="theme-color" content="#000000">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfólio - Thamires Vitória</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
 <body>
 
   <header>
     <nav>
-      <ul>
-        <li><a href="#sobre">Sobre</a></li>
+      <ul class="navbar">
+        <li><a href="#home">Início</a></li>
         <li><a href="#projetos">Projetos</a></li>
         <li><a href="#contato">Contato</a></li>
       </ul>
     </nav>
   </header>
 
-  <section class="desc">
-        <h1>Thamires Vitoria</h1>
-    <img src="./Assets/Itadori.jpg" alt="minha foto">
-  </section>
-  
-  <section id="sobre">
-    <h2>Sobre Mim</h2>
-    <p>Atualmente estou estudando para ser um desenvolvedor focado em Frontend e Backend, gosto de criar novas coisa e fazer alguns desafios.</p>
-  </section>
+  <section class="home" id="home">
+    <div class="img">
+      <img src="Assets/Itadori.jpg" alt="Foto de Thamires" />
+    </div>
 
-  <section id="projetos">
-    <h2>Projetos</h2>
-    <div class="projetos-grid">
-      <div class="projeto-card">
-        <h3>Projeto 1</h3>
-        <p>Descrição do projeto.</p>
-        <a href="#" target="_blank">Ver código</a>
+    <div class="home-content">
+      <h1>Olá, seja bem-vindo(a)! Eu me chamo <span>Thamires Vitória</span></h1>
+
+      <!-- TEXTO COM ANIMAÇÃO -->
+     <p class="typing-wrapper">
+  <span class="intro-line">Eu sou uma&nbsp;</span>
+  <span class="typing-text"></span>
+  <span class="cursor">|</span>
+</p>
+
+      <p>
+        Atualmente estou estudando no Cícero Dias, no curso de Desenvolvimento de Sistemas (Módulo 1). Também faço cursos online na DIO.me. Também já fui jovem aprendiz administrativo na Solar Coca-Cola.
+      </p>
+    </div>
+    </div>
+
+      <div class="cta-area">
+        <div class="social-icon">
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-x-twitter"></i></a>
+          <a href="https://github.com/Thamiresvitoria?tab=repositories"><i class="fab fa-github"></i></a>
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+        </div>
+        <a href="#" class="btn">Contrate-me</a>
       </div>
-      <div class="projeto-card">
-        <h3>Projeto 2</h3>
-        <p>Descrição do projeto.</p>
-        <a href="#" target="_blank">Ver código</a>
-      </div>
-      <!-- Adicione mais projetos conforme quiser -->
     </div>
   </section>
 
-  <section id="contato">
+
+  <section class="projetos" id="projetos">
+    <h2>Projetos</h2>
+    <div class="projetos-grid">
+      <div class="projeto-card">
+        <h3>Projeto Integrador</h3>
+        <p>É um projeto onde fizemos um site focado em venda de doces e salgados, que deixaria a vida do cliente e do vendedor mais facil. Ainda estamos desenvolvendo ele.
+        </p>
+        <a href="https://github.com/Thamiresvitoria/Projeto-Integrador.git" target="_blank">Ver código</a>
+      </div>
+      <div class="projeto-card">
+        <h3>Projeto Dio - Banco</h3>
+        <p>Este foi um dos desafios que tive que fazer enquanto estava fazendo curso de Python, era para a gente otimizar um sistema de um banco que ele havia criado e com base nos códigos que tinha no it iriamos ajustando ele.</p>
+        <a href="https://github.com/Thamiresvitoria/Desafio_banco_dio-/blob/main/README.md" target="_blank">Ver código</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="contato" id="contato">
     <h2>Contato</h2>
     <form>
-      <input type="text" placeholder="Seu nome" required>
-      <input type="email" placeholder="Seu email" required>
+      <input type="text" placeholder="Seu nome" required />
+      <input type="email" placeholder="Seu email" required />
       <textarea placeholder="Sua mensagem" required></textarea>
       <button type="submit">Enviar</button>
     </form>
   </section>
 
   <footer>
-    <p>&copy; 2025 Shun. Todos os direitos reservados.</p>
+    <p>&copy; 2025 Todos os direitos reservados.</p>
   </footer>
 
+  <script src="script.js" defer></script>
 </body>
 </html>
