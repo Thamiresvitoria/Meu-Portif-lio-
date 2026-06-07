@@ -73,8 +73,6 @@ nav ul li a:hover {
 /* Home container novo */
 .home-container {
   display: flex;
-  align-items: center;
-  justify-content: center;
   flex-wrap: wrap;
   gap: 3rem;
   padding: 2rem 5%;
@@ -88,7 +86,7 @@ nav ul li a:hover {
   border-radius: 50%;
   box-shadow: 0 0 25px red;
   cursor: pointer;
-  margin-top: 1rem;
+  margin: 1rem 3rem;
 }
 
 .home img:hover {
@@ -104,6 +102,12 @@ nav ul li a:hover {
   flex: 1;
   min-width: 280px;
   max-width: 600px;
+  text-align: center;
+}
+
+.home-content h1{
+  min-width: 300px;
+
 }
 
 .home .cta-area {
@@ -122,7 +126,7 @@ nav ul li a:hover {
   text-decoration: none; 
   border: 0.2rem solid rgb(141, 6, 6);
   padding: 1rem 2rem;
-  border-radius: 30%;
+  border-radius: 50%;
   letter-spacing: 0.1rem;
   font-weight: 600;
   transition: 0.3s ease;
@@ -155,6 +159,7 @@ nav ul li a:hover {
   justify-content: center;
   gap: 1.5rem;
   flex-wrap: wrap;
+  margin-top: 1.3rem;
 }
 
 .social-icon a {
@@ -188,13 +193,13 @@ nav ul li a:hover {
   justify-content: center;
   align-items: center;
   flex-wrap: nowrap;
-  font-size: 2rem;
+  font-size: 5rem;
   text-align: center;
   white-space: nowrap;
 }
 
 .typing-text {
-  color: #a30b0b;
+  color: #ac0202;
   white-space: nowrap;
   font-style: 3rem;
 }
@@ -222,6 +227,33 @@ nav ul li a:hover {
 
 span {
   color: #a30b0b;
+}
+
+.sobre-container{
+  flex-wrap: wrap;
+  padding: 4rem 5%;
+  
+}
+
+.sobre-container h2{
+  display: flex;
+  font-size: 3.5rem;
+  color: white;
+  margin-bottom: 3rem;
+  border-bottom: 2px solid #a30b0b;
+  padding-bottom: 1rem;
+}
+
+.sobre-container p{
+  font-size: 1.9rem;
+}
+
+.sobre-container h3{
+  display: flex;
+  font-size: 2.5rem;
+  color: white;
+  margin-bottom: 1.2rem;
+  padding: 1.2rem 0%;
 }
 
 /* Projetos */
@@ -259,13 +291,14 @@ span {
 }
 
 .projeto-card h3 {
-  color: #a30b0b;
-  margin-bottom: 1rem;
-  font-size: 2rem;
+  color: #c20202;
+  margin-bottom: 2rem;
+  font-size: 2.3rem;
+  padding-bottom:1rem;
 }
 
 .projeto-card p {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   margin-bottom: 1rem;
   color: white;
 }
@@ -274,7 +307,7 @@ span {
   color: #a30b0b;
   text-decoration: none;
   font-weight: 600;
-  font-size: 1.3rem;
+  font-size: 2.3rem;
 }
 
 .projeto-card a:hover {
@@ -434,4 +467,4 @@ footer {
   margin-top: 1.2rem;
 }
 
-    }
+}
