@@ -43,12 +43,12 @@ document.addEventListener("DOMContentLoaded", function () {
   const typingElement = document.querySelector(".typing-text");
   const cursorElement = document.querySelector(".cursor");
 
-  const words = ["Estudante de DS", "Futura Dev", "Auxiliar Admistrativo"];
+  const words = ["Desenvolvedora FullStack", "Estudante de Analise e desenvolvimento de sistema"];
   let wordIndex = 0;
   let charIndex = 0;
   let isDeleting = false;
 
-  const typingSpeed = 100;
+  const typingSpeed = 80;
   const deletingSpeed = 60;
   const delayBetweenWords = 1500;
 
