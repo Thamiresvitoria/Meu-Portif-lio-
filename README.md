@@ -1,4 +1,4 @@
-# 🖥️ Portifólio 
+# Portifólio 
 
  ## Descrição do Projeto
 
@@ -18,7 +18,7 @@ Atualmente, algumas melhorias ainda estão previstas para futuras versões do pr
 
   --- 
 
-# 💐 Tecnologias.
+#  Tecnologias.
   
 <div align="center">
   <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white"/>
